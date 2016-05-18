@@ -1,5 +1,5 @@
 GEM
-  remote: http://ruby.taobao.org/
+  remote: https://rubygems.org/
   specs:
     celluloid (0.16.0)
       timers (~> 4.0.0)
@@ -74,3 +74,6 @@ DEPENDENCIES
   guard
   guard-compass
   guard-livereload
+
+BUNDLED WITH
+   1.11.2
