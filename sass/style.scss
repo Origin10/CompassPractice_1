@@ -1,16 +1,20 @@
 @import "compass/reset";
-@import "compass/utilities/general";
-
+@import "compass/utilities/general/clearfix";
+$bg-color: #efefef;
+$text-color: #4f4f4f;
+$second-text-color: #D9DADA;
 $highlight-text-color: white;
-
+$button-color: #6cdcac;
 body {
+    font-family: 'Open Sans', sans-serif;
     font-size: 62.5%;
     text-align: center;
+    background-color: $bg-color;
 }
 
-.hero{
-	max-width: 100em;
-	margin: 0 auto;
+.hero {
+    max-width: 100em;
+    margin: 0 auto;
     //導航列
     header {
         img {
@@ -26,9 +30,8 @@ body {
                 padding: .5em 1em;
                 border: 1px solid transparent;
                 border-radius: 2px;
-
-                &:last-child{
-                	border: 1px solid $highlight-text-color;
+                &:last-child {
+                    border: 1px solid $highlight-text-color;
                 }
             }
         }
@@ -41,27 +44,59 @@ body {
     }
     h2 {
         font-size: 2em;
+        color: $second-text-color;
     }
     background: url('/images/find-an-agent-hero.png');
-    background-size: cover ;
-
+    background-size: cover;
     color: $highlight-text-color;
 }
 
-form{
-	padding: 2em 0 4em 0;
-	input[type="text"]{
-		padding: 1em;
-		border: 0;
-		width: 18em;
-		border-radius: 2px 0 0 2px;
-	}
-	input[type="button"]{
-		color: $highlight-text-color;
-		padding: 1em;
-		border: 0px;
-		width: 6em;
-		border-radius: 0 2px 2px 0;
-		background-color: lightgreen;
-	}
+form {
+    padding: 2em 0 4em 0;
+    input[type="text"] {
+        padding: 1em;
+        border: 0;
+        width: 18em;
+        border-radius: 2px 0 0 2px;
+        background: $bg-color;
+        opacity: .3;
+    }
+    input[type="button"] {
+        color: $highlight-text-color;
+        padding: 1em;
+        border: 0px;
+        width: 6em;
+        border-radius: 0 2px 2px 0;
+        background-color: $button-color;
+        text-transform: uppercase;
+    }
+}
+
+.numbers {
+    width: 80%; //用上一個hero section為標準
+    margin: 0 auto;
+    ul {
+        position: relative;
+        top: -1em;
+        background: $bg-color;
+        li {
+            float: left;
+            width: 25%;
+            box-sizing: border-box;
+            border-top: 1px solid $second-text-color;
+            border-bottom: 1px solid $second-text-color;
+            border-left: 1px solid $second-text-color;
+            &:last-child {
+                border-right: 1px solid $second-text-color;
+            }
+            h2{
+            	font-size: 2em;
+            	padding: 1em 0;
+            }
+            h3{
+            	padding: 0 0 2em 0;
+            }
+        }
+        @include clearfix;
+    }
 }

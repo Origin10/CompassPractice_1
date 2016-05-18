@@ -63,13 +63,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 6, ../sass/style.scss */
+/* line 8, ../sass/style.scss */
 body {
+  font-family: 'Open Sans', sans-serif;
   font-size: 62.5%;
   text-align: center;
+  background-color: #efefef;
 }
 
-/* line 11, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 .hero {
   max-width: 100em;
   margin: 0 auto;
@@ -77,22 +79,22 @@ body {
   background-size: cover;
   color: white;
 }
-/* line 15, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 .hero header {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 16, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 .hero header img {
   width: 8em;
   height: 2em;
   float: left;
 }
-/* line 21, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 .hero header ul {
   float: right;
 }
-/* line 23, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 .hero header ul li {
   float: left;
   margin: 1em .5em;
@@ -100,37 +102,77 @@ body {
   border: 1px solid transparent;
   border-radius: 2px;
 }
-/* line 30, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .hero header ul li:last-child {
   border: 1px solid white;
 }
-/* line 38, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .hero h1 {
   font-size: 4em;
   padding: 1em 0 .5em 0;
 }
-/* line 42, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .hero h2 {
   font-size: 2em;
+  color: #D9DADA;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 form {
   padding: 2em 0 4em 0;
 }
-/* line 53, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 form input[type="text"] {
   padding: 1em;
   border: 0;
   width: 18em;
   border-radius: 2px 0 0 2px;
+  background: #efefef;
+  opacity: .3;
 }
-/* line 59, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 form input[type="button"] {
   color: white;
   padding: 1em;
   border: 0px;
   width: 6em;
   border-radius: 0 2px 2px 0;
-  background-color: lightgreen;
+  background-color: #6cdcac;
+  text-transform: uppercase;
+}
+
+/* line 75, ../sass/style.scss */
+.numbers {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 78, ../sass/style.scss */
+.numbers ul {
+  position: relative;
+  top: -1em;
+  background: #efefef;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 82, ../sass/style.scss */
+.numbers ul li {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  border-top: 1px solid #D9DADA;
+  border-bottom: 1px solid #D9DADA;
+  border-left: 1px solid #D9DADA;
+}
+/* line 89, ../sass/style.scss */
+.numbers ul li:last-child {
+  border-right: 1px solid #D9DADA;
+}
+/* line 92, ../sass/style.scss */
+.numbers ul li h2 {
+  font-size: 2em;
+  padding: 1em 0;
+}
+/* line 96, ../sass/style.scss */
+.numbers ul li h3 {
+  padding: 0 0 2em 0;
 }
