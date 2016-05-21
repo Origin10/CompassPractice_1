@@ -1,3 +1,150 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?6oac04");
+  src: url("../fonts/icomoon.eot?6oac04#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?6oac04") format("truetype"), url("../fonts/icomoon.woff?6oac04") format("woff"), url("../fonts/icomoon.svg?6oac04#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, ../sass/icomoon.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 27, ../sass/icomoon.scss */
+.icon-image:before {
+  content: "\e90d";
+}
+
+/* line 30, ../sass/icomoon.scss */
+.icon-images:before {
+  content: "\e90e";
+}
+
+/* line 33, ../sass/icomoon.scss */
+.icon-play:before {
+  content: "\e912";
+}
+
+/* line 36, ../sass/icomoon.scss */
+.icon-book:before {
+  content: "\e91f";
+}
+
+/* line 39, ../sass/icomoon.scss */
+.icon-folder:before {
+  content: "\e929";
+}
+
+/* line 42, ../sass/icomoon.scss */
+.icon-folder-open:before {
+  content: "\e930";
+}
+
+/* line 45, ../sass/icomoon.scss */
+.icon-folder-plus:before {
+  content: "\e931";
+}
+
+/* line 48, ../sass/icomoon.scss */
+.icon-phone:before {
+  content: "\e942";
+}
+
+/* line 51, ../sass/icomoon.scss */
+.icon-map:before {
+  content: "\e94b";
+}
+
+/* line 54, ../sass/icomoon.scss */
+.icon-bubbles2:before {
+  content: "\e96d";
+}
+
+/* line 57, ../sass/icomoon.scss */
+.icon-bubbles4:before {
+  content: "\e970";
+}
+
+/* line 60, ../sass/icomoon.scss */
+.icon-tree:before {
+  content: "\e9bc";
+}
+
+/* line 63, ../sass/icomoon.scss */
+.icon-point-up:before {
+  content: "\ea03";
+}
+
+/* line 66, ../sass/icomoon.scss */
+.icon-point-right:before {
+  content: "\ea04";
+}
+
+/* line 69, ../sass/icomoon.scss */
+.icon-point-down:before {
+  content: "\ea05";
+}
+
+/* line 72, ../sass/icomoon.scss */
+.icon-point-left:before {
+  content: "\ea06";
+}
+
+/* line 75, ../sass/icomoon.scss */
+.icon-circle-up:before {
+  content: "\ea41";
+}
+
+/* line 78, ../sass/icomoon.scss */
+.icon-circle-right:before {
+  content: "\ea42";
+}
+
+/* line 81, ../sass/icomoon.scss */
+.icon-circle-down:before {
+  content: "\ea43";
+}
+
+/* line 84, ../sass/icomoon.scss */
+.icon-circle-left:before {
+  content: "\ea44";
+}
+
+/* line 87, ../sass/icomoon.scss */
+.icon-sort-alpha-asc:before {
+  content: "\ea48";
+}
+
+/* line 90, ../sass/icomoon.scss */
+.icon-sort-alpha-desc:before {
+  content: "\ea49";
+}
+
+/* line 93, ../sass/icomoon.scss */
+.icon-google-plus2:before {
+  content: "\ea8c";
+}
+
+/* line 96, ../sass/icomoon.scss */
+.icon-facebook2:before {
+  content: "\ea91";
+}
+
+/* line 99, ../sass/icomoon.scss */
+.icon-twitter:before {
+  content: "\ea96";
+}
+
 /* line 5, ../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,7 +210,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 8, ../sass/style.scss */
+/* line 11, ../sass/style.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 62.5%;
@@ -71,7 +218,7 @@ body {
   background-color: #efefef;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 .hero {
   max-width: 100em;
   margin: 0 auto;
@@ -79,22 +226,22 @@ body {
   background-size: cover;
   color: white;
 }
-/* line 19, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 .hero header {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 20, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 .hero header img {
   width: 8em;
   height: 2em;
   float: left;
 }
-/* line 25, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 .hero header ul {
   float: right;
 }
-/* line 27, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .hero header ul li {
   float: left;
   margin: 1em .5em;
@@ -102,26 +249,26 @@ body {
   border: 1px solid transparent;
   border-radius: 2px;
 }
-/* line 33, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .hero header ul li:last-child {
   border: 1px solid white;
 }
-/* line 41, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 .hero h1 {
   font-size: 4em;
   padding: 1em 0 .5em 0;
 }
-/* line 45, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .hero h2 {
   font-size: 2em;
   color: #D9DADA;
 }
 
-/* line 54, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 form {
   padding: 2em 0 4em 0;
 }
-/* line 56, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 form input[type="text"] {
   padding: 1em;
   border: 0;
@@ -130,7 +277,7 @@ form input[type="text"] {
   background: #efefef;
   opacity: .3;
 }
-/* line 64, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 form input[type="button"] {
   color: white;
   padding: 1em;
@@ -141,12 +288,12 @@ form input[type="button"] {
   text-transform: uppercase;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .numbers {
   width: 80%;
   margin: 0 auto;
 }
-/* line 78, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 .numbers ul {
   position: relative;
   top: -1em;
@@ -154,7 +301,7 @@ form input[type="button"] {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 82, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .numbers ul li {
   float: left;
   width: 25%;
@@ -163,16 +310,90 @@ form input[type="button"] {
   border-bottom: 1px solid #D9DADA;
   border-left: 1px solid #D9DADA;
 }
-/* line 89, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .numbers ul li:last-child {
   border-right: 1px solid #D9DADA;
 }
-/* line 92, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .numbers ul li h2 {
   font-size: 2em;
   padding: 1em 0;
 }
-/* line 96, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .numbers ul li h3 {
   padding: 0 0 2em 0;
+}
+
+/* line 108, ../sass/style.scss */
+.how-it-works li {
+  float: left;
+  width: 33.33%;
+}
+/* line 111, ../sass/style.scss */
+.how-it-works li:before {
+  display: block;
+  content: "";
+  background: #AAA;
+  width: 100%;
+  height: 2px;
+  position: relative;
+  top: 4em;
+  left: 50%;
+  margin: 0 2em;
+}
+/* line 122, ../sass/style.scss */
+.how-it-works li:last-child:before {
+  display: none;
+}
+/* line 126, ../sass/style.scss */
+.how-it-works .number {
+  font-size: 2em;
+  color: #AAA;
+  border: 1px solid #AAA;
+  width: 1em;
+  height: 1em;
+  display: block;
+  margin: 1em auto 2em auto;
+  padding: .4em;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #efefef;
+}
+/* line 138, ../sass/style.scss */
+.how-it-works i {
+  font-size: 3.6em;
+}
+/* line 141, ../sass/style.scss */
+.how-it-works .icon-book {
+  color: #ECA95A;
+}
+/* line 144, ../sass/style.scss */
+.how-it-works .icon-point-up {
+  color: #AC9CD2;
+}
+/* line 147, ../sass/style.scss */
+.how-it-works .icon-bubbles4 {
+  color: #4D99CB;
+}
+/* line 151, ../sass/style.scss */
+.how-it-works p::before {
+  content: "";
+  display: block;
+  color: #6e6e6e;
+}
+/* line 156, ../sass/style.scss */
+.how-it-works h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 1em 0;
+}
+/* line 161, ../sass/style.scss */
+.how-it-works h2:after {
+  display: block;
+  content: "";
+  background-color: #AAA;
+  width: 2em;
+  height: .1em;
+  margin: .4em auto;
 }

@@ -1,10 +1,13 @@
+@import "icomoon";
 @import "compass/reset";
 @import "compass/utilities/general/clearfix";
+@import "compass/css3/border-radius";
 $bg-color: #efefef;
 $text-color: #4f4f4f;
 $second-text-color: #D9DADA;
 $highlight-text-color: white;
 $button-color: #6cdcac;
+$border-color: #AAA;
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 62.5%;
@@ -89,14 +92,79 @@ form {
             &:last-child {
                 border-right: 1px solid $second-text-color;
             }
-            h2{
-            	font-size: 2em;
-            	padding: 1em 0;
+            h2 {
+                font-size: 2em;
+                padding: 1em 0;
             }
-            h3{
-            	padding: 0 0 2em 0;
+            h3 {
+                padding: 0 0 2em 0;
             }
         }
         @include clearfix;
+    }
+}
+
+.how-it-works {
+    li {
+        float: left;
+        width: 33.33%;
+        &:before{
+            display: block;
+            content: "";
+            background: $border-color;
+            width: 100%;
+            height: 2px;
+            position: relative;
+            top: 4em;
+            left: 50%;
+            margin: 0 2em; 
+        }
+        &:last-child:before{
+            display: none;
+        }
+    }
+    .number {
+        font-size: 2em;
+        color: $border-color;
+        border: 1px solid $border-color;
+        width: 1em;
+        height: 1em;
+        display: block;
+        margin: 1em auto 2em auto;
+        padding: .4em;
+        @include border-radius(100%);
+        background-color: $bg-color;
+    }
+    i {
+        font-size: 3.6em;
+    }
+    .icon-book {
+        color: #ECA95A;
+    }
+    .icon-point-up {
+        color: #AC9CD2;
+    }
+    .icon-bubbles4 {
+        color: #4D99CB;
+    }
+    //偽元素
+    p::before {
+        content: "";
+        display: block;
+        color: #6e6e6e;
+    }
+    h2 {
+        font-size: 2em;
+        text-transform: uppercase;
+        padding: 1em 0;
+
+        &:after{
+            display: block;
+            content: "";
+            background-color: $border-color;
+            width: 2em;
+            height: .1em;
+            margin: .4em auto;
+        }
     }
 }
