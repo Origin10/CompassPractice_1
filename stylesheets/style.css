@@ -210,7 +210,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 11, ../sass/style.scss */
+/* line 12, ../sass/style.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 62.5%;
@@ -218,7 +218,7 @@ body {
   background-color: #efefef;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 .hero {
   max-width: 100em;
   margin: 0 auto;
@@ -226,22 +226,25 @@ body {
   background-size: cover;
   color: white;
 }
-/* line 22, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 .hero header {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 23, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .hero header img {
   width: 8em;
   height: 2em;
   float: left;
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
-/* line 28, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .hero header ul {
   float: right;
 }
-/* line 30, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .hero header ul li {
   float: left;
   margin: 1em .5em;
@@ -249,26 +252,26 @@ body {
   border: 1px solid transparent;
   border-radius: 2px;
 }
-/* line 36, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .hero header ul li:last-child {
   border: 1px solid white;
 }
-/* line 44, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .hero h1 {
   font-size: 4em;
   padding: 1em 0 .5em 0;
 }
-/* line 48, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .hero h2 {
   font-size: 2em;
   color: #D9DADA;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 form {
   padding: 2em 0 4em 0;
 }
-/* line 59, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 form input[type="text"] {
   padding: 1em;
   border: 0;
@@ -277,7 +280,7 @@ form input[type="text"] {
   background: #efefef;
   opacity: .3;
 }
-/* line 67, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 form input[type="button"] {
   color: white;
   padding: 1em;
@@ -288,12 +291,12 @@ form input[type="button"] {
   text-transform: uppercase;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .numbers {
   width: 80%;
   margin: 0 auto;
 }
-/* line 81, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .numbers ul {
   position: relative;
   top: -1em;
@@ -301,7 +304,7 @@ form input[type="button"] {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 85, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .numbers ul li {
   float: left;
   width: 25%;
@@ -310,26 +313,26 @@ form input[type="button"] {
   border-bottom: 1px solid #D9DADA;
   border-left: 1px solid #D9DADA;
 }
-/* line 92, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .numbers ul li:last-child {
   border-right: 1px solid #D9DADA;
 }
-/* line 95, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .numbers ul li h2 {
   font-size: 2em;
   padding: 1em 0;
 }
-/* line 99, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .numbers ul li h3 {
   padding: 0 0 2em 0;
 }
 
-/* line 108, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .how-it-works li {
   float: left;
   width: 33.33%;
 }
-/* line 111, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .how-it-works li:before {
   display: block;
   content: "";
@@ -337,15 +340,15 @@ form input[type="button"] {
   width: 100%;
   height: 2px;
   position: relative;
-  top: 4em;
+  top: 3em;
   left: 50%;
-  margin: 0 2em;
+  z-index: -1;
 }
-/* line 122, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .how-it-works li:last-child:before {
   display: none;
 }
-/* line 126, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .how-it-works .number {
   font-size: 2em;
   color: #AAA;
@@ -360,27 +363,21 @@ form input[type="button"] {
   border-radius: 100%;
   background-color: #efefef;
 }
-/* line 138, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .how-it-works i {
   font-size: 3.6em;
 }
-/* line 141, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .how-it-works .icon-book {
   color: #ECA95A;
 }
-/* line 144, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .how-it-works .icon-point-up {
   color: #AC9CD2;
 }
-/* line 147, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .how-it-works .icon-bubbles4 {
   color: #4D99CB;
-}
-/* line 151, ../sass/style.scss */
-.how-it-works p::before {
-  content: "";
-  display: block;
-  color: #6e6e6e;
 }
 /* line 156, ../sass/style.scss */
 .how-it-works h2 {
